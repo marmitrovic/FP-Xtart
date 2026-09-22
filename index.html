@@ -1,8 +1,45 @@
-<html>
-	<head>
+<!DOCTYPE html>
+<html lang="en">
 
-	</head>
-	<body>
-		hOLA desde la web de MARKO
-	</body>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Welcome</title>
+	<style>
+		@keyframes animation {
+			from{
+				font-size: 10px;
+			}
+			to{
+				font-size: 20px;
+			}
+		}
+		@keyframes anima{
+			from {
+				margin-top: 90px;
+				color: rgba(255, 255, 255, 0);
+			}
+			to {
+				color: rgba(164, 50, 50, 0.905);
+			}
+		}
+		body {
+			background-color: rgb(153, 247, 215);
+		}
+		.mensaje{
+			color: brown;
+			text-align: center;
+			margin-top: 100px;
+			animation: animation, anima;
+			animation-duration: 3s;
+
+		}
+	</style>
+</head>
+
+<body>
+	<div class="mensaje">Welcome to my paige</div>
+	<div class="mensaje">Marko Mitrovic</div>
+</body>
+
 </html>
