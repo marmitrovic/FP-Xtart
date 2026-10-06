@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<script src="https://cdn.jsdelivr.net/npm/@hiseb/confetti@2.2.0/dist/confetti.min.js"></script>
+<style>
+		@font-face {
+			font-family: fuente_win;
+			src: url(fuente1.ttf);
+		}
+		@font-face {
+			font-family: mifuente;
+			src: url(fuente1.ttf);
+		}
+		@keyframes zoom {
+			to{
+				transform: scale(1.2);
+			}
+			
+		}
+		.win{
+			animation: zoom 1s alternate infinite;
+			margin: 25px;
+			font-family: fuente_Win;
+			font-size: 50px;
+			
+
+		}
+		.salutar{
+			animation: zoom 1s alternate infinite;
+			margin: 20px;
+			font-family: mifuente;
+			font-size: 10px;
+			
+
+		}
+
+		div{
+			text-align: center;
+		}
+		body{
+			background: linear-gradient(to bottom, yellow, blue);
+			min-height: 100vh;
+		}
+	</style>
+	
+</head>
+<body>
+	<div class="win">FELICIDADES</div>
+	<div class="salutar">adivinaste todas las preguntas</div>
+	<div>
+		<a href="pregunta1.html">Volver a jugar</a>
+	</div>
+	<script>
+		confetti()
+	</script>
+</body>
+</html>

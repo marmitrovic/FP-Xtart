@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>level 5</title>
+		<style>
+			body{
+			text-align: center;
+			background: yellow;
+			min-height: 100vh;
+		}
+	.question{
+			font-weight: bold;
+
+		}
+</style>
+
+</head>
+<body>
+	<div>Bienvenido al juego de las pregunatas</div>
+	<div>prgunta 5</div>
+	<div class="question">?Cuál es la moneda oficial de España?</div>
+	<div ><a href="#" onclick="responder(1)" >1) Euro</a></div> 
+	<div><a href="#" onclick="responder(2)" >2) Peseta</a></div>
+	<div><a href="#" onclick="responder(3)">3) Dólar</a></div>
+
+	<script>
+		function responder(params) {
+			alert("respondiste: " + params)
+			if( params == 1){
+				alert("muy bien, acertaste!")
+				window.location.href = "pregunta6.html"
+			}else{
+				alert("fallaste")
+				window.location.href = "game_over.html"
+			}
+		}
+	</script>
+</body>
+</html>

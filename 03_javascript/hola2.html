@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Parque Warner</title>
+	<style>
+		/* CSS 
+		cascade style sheets 
+		*/
+		body {
+			background-color: rgb(148, 127, 255);
+		}
+	</style>
+</head>
+<body>
+	<!-- comentario   ctrl + / -->
+	<div onmouseenter="fun1()" onmouseout="fun2()">
+		 pasa el puntero por aqui
+	</div>
+
+	<script>
+		function fun1(params) {
+			document.getElementsByTagName("div")[0].style.backgroundColor = "#00FF00"
+		}
+		function fun2(params) {
+			document.getElementsByTagName("div")[0].style.backgroundColor = "#FFFFFF"
+		}
+	</script>
+</body>
+</html>

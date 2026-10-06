@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style>
+		@font-face {
+			font-family: mifuente;
+			src: url(fuente1.ttf);
+		}
+		@keyframes zoom {
+			to{
+				transform: scale(1.2);
+			}
+			
+		}
+		.gameover{
+			animation: zoom 1s alternate infinite;
+			margin: 15px;
+			font-family: mifuente;
+			font-size: 150px;
+			
+
+		}
+		div{
+			text-align: center;
+		}
+		body{
+			background: linear-gradient(to bottom, aqua, green);
+			min-height: 100vh;
+		}
+	</style>
+</head>
+<body>
+	<div class="gameover">Game Over</div>
+	<div>
+		<a href="pregunta1.html">volver a empezar</a>
+
+	</div>
+</body>
+</html>

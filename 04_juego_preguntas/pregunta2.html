@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>level 2</title>
+</head>
+<style>
+		body{
+			text-align: center;
+			background: yellow;
+			min-height: 100vh;
+		}
+	.question{
+			font-weight: bold;
+
+		}
+</style>
+<body>
+	<div>Bienvenido al juego de las pregunatas</div>
+	<div>prgunta 2</div>
+	<div class="question">?de que color es el caballo de santiago?</div>
+	<div ><a href="#" onclick="responder(1)" >1) negro</a></div> 
+	<div><a href="#" onclick="responder(2)" >2) amarillo</a></div>
+	<div><a href="#" onclick="responder(3)">3) blanco</a></div>
+
+	<script>
+		function responder(params) {
+			alert("respondiste: " + params)
+			if( params == 3){
+				alert("muy bien, acertaste!")
+				window.location.href = "pregunta3.html"
+			}else{
+				alert("fallaste")
+				window.location.href = "game_over.html"
+			}
+		}
+	</script>
+</body>
+</html>

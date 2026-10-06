@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+		<style>
+			body{
+			text-align: center;
+			background: yellow;
+			min-height: 100vh;
+		}
+	.question{
+			font-weight: bold;
+
+		}
+</style>
+
+</head>
+<body>
+	<div>Bienvenido al juego de las pregunatas</div>
+	<div >level 4</div>
+	<div class="question">?Cuáles son los colores de la bandera de España?</div>
+	<div ><a href="#" onclick="responder(1)" >1) Azul y blanco</a></div> 
+	<div><a href="#" onclick="responder(2)" >2) Verde y rojo</a></div>
+	<div><a href="#" onclick="responder(3)">3) Rojo y amarillo</a></div>
+
+	<script>
+		function responder(params) {
+			alert("respondiste: " + params)
+			if( params == 3){
+				alert("muy bien, acertaste!")
+				window.location.href = "pregunta5.html"
+			}else{
+				alert("fallaste")
+				window.location.href = "game_over.html"
+			}
+		}
+	</script>
+</body>
+</html>
