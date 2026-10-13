@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style>
+		body{
+			background-color: beige;
+		}
+		button{
+			background-color: blue;
+			color: white;
+			height: 60px;
+			border-radius: 15px;
+			cursor: pointer;
+		}
+		.oculto{
+			display: none;
+
+		}
+		div{
+			text-align: center;
+			margin: 15px;
+
+		}
+	</style>
+</head>
+<body>
+	<div>
+		pulsa en el boton cuando aparezca
+	</div>
+
+	<div>
+		<button class="oculto" onclick="pulsar()">Pulsame</button>
+	</div>
+	<script>
+	boton = document.getElementsByTagName("button")[0]
+		function pulsar(){
+			//performance.now da el tiempo en ms
+			// desde que se cargo la pagina
+			tiempo_tardado = performance.now() - 1000
+			segundos_tardao = tiempo_tardado / 10000
+			alert("Tu tiempo de reaccion es: " + tiempo_tardado + " segundos")
+			 boton.disabled = true
+			 boton.style.opacity = 0.5
+		}
+
+		setTimeout(() => {
+			//document.getElementsByTagName("button")[0].classList.remove("oculto")
+			boton.classList.remove("oculto")
+			
+		}, 1000);
+	</script>
+</body>
+</html>
