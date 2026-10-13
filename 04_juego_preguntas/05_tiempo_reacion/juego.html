@@ -36,14 +36,15 @@
 	</div>
 	<script>
 	boton = document.getElementsByTagName("button")[0]
+	tiempo_espera = 1000 + Math.random()*1500
 		function pulsar(){
 			//performance.now da el tiempo en ms
 			// desde que se cargo la pagina
-			tiempo_tardado = performance.now() - 1000
+			tiempo_tardado = performance.now() - tiempo_espera
 			segundos_tardao = tiempo_tardado / 10000
-			alert("Tu tiempo de reaccion es: " + tiempo_tardado + " segundos")
-			 boton.disabled = true
-			 boton.style.opacity = 0.5
+			alert("Tu tiempo de reaccion es: " + segundos_tardao.toFixed(2) + " segundos")
+			boton.disabled = true
+			boton.style.opacity = 0.5
 		}
 
 		setTimeout(() => {
@@ -51,6 +52,12 @@
 			boton.classList.remove("oculto")
 			
 		}, 1000);
+
+		//numeros aleatorios en javascript
+		aleatorio = Math.random() // ALEa
+		entre_0_y_1000 = aleatorio * 1000
+		//alert(entre_0_y_1000.toFixed(0))
+
 	</script>
 </body>
 </html>
